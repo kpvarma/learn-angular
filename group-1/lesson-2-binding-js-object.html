@@ -1,18 +1,27 @@
 <!doctype html>
-<html ng-app="LessonTwoApp">
+<html ng-app="">
   <head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
 
     <!-- Load angular.js first -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <!-- Then load your app file which uses angular -->
-    <script src="js/main.js"></script>
 
   </head>
   <body>
-    <div ng-controller="UserController">
+
+    <div style="margin:30px;">
+
+      <h1>Binding a JS Object</h1>
+      <p>Grouping attributs to a Model</p>
+
       <div>
         <h1>{{ user.first_name }} {{ user.last_name }}</h1>
         <h3>{{ user.address }}</h3>
+        <h3>{{ abcd }}</h3>
       </div>
       <div>
         <input type="text" ng-model="user.first_name" placeholder="First Name">

@@ -14,31 +14,125 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
 
+    <style type="text/css">
+      .side-rail {
+        position: relative;
+        padding: 10px 15px;
+        font-color: 16px;
+        color: #cdbfe3;
+        text-align: left;
+        text-shadow: 0 1px 0 rgba(0,0,0,.1);
+        background-color: #6f5499;
+        background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+        background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+      }
+      .side-rail a {font-size: 16px;color: #fff;}
+    </style>
+
   </head>
   <body>
-    <div class="container" style="min-height:600px;">
 
-      <div class="header clearfix">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Example Index</a></li>
-          <li class="active"><a href="">Github</a></li>
-          <li><a href="www.meetup.com/Mysore-Ruby-User-Group/">Mysore Ruby</a></li>
-          <li><a href="https://docs.google.com/presentation/d/1Y8UCj3aIll53Tv1bMAPzwu0ml9q3ckv0wlL6paq1mNM/edit?usp=sharing">View Slides</a></li>
-        </ul>
-        <h3 class="text-muted">Angular JS Examples</h3>
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Angular JS Examples</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Example Index</a></li>
+            <li><a href="https://github.com/kpvarma/learn-angular">Github</a></li>
+            <li><a href="www.meetup.com/Mysore-Ruby-User-Group/">Mysore Ruby</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1Y8UCj3aIll53Tv1bMAPzwu0ml9q3ckv0wlL6paq1mNM/edit?usp=sharing">View Slides</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
+
+    <div class="bs-docs-header" id="content">
+      <div class="container">
+        <h1>Examples Index</h1>
+        <p>Learn Angular JS through examples.</p>
+        <div id="carbonads-container">
+          <div class="carbonad">
+            <div id="azcarbon">
+              <span class="carbonad-image">
+                Feel free to fork from github repo and add more examples.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
 
       <h1>Examples Index</h1>
 
-      <ul class="highlight" style="padding:20px;">
-        <li><a href="lesson-1/index.html">Lesson 1</a></li>
-        <li><a href="lesson-2/index.html">Lesson 2</a></li>
-        <li><a href="lesson-3/index.html">Lesson 3</a></li>
-      </ul>
+      <div class="pull-left side-rail" style="width:30%;margin:0 2% 0 0">
+
+        <a href="intro/lesson-1.html" target="iframe_lessons">Intro 1</a></br>
+        <a href="intro/lesson-2.html" target="iframe_lessons">Intro 2</a></br>
+        <a href="intro/lesson-3.html" target="iframe_lessons">Intro 3</a></br>
+        <a href="intro/lesson-4.html" target="iframe_lessons">Intro 4</a></br>
+
+        <a href="group-1/lesson-1-simple-binding.html" target="iframe_lessons">Simple Binding</a></br>
+        <a href="group-1/lesson-2-binding-js-object.html" target="iframe_lessons">Binding JS Object</a></br>
+
+        <a href="group-2/lesson-1.html" target="iframe_lessons">ng-app and ng-controller</a></br>
+        <a href="group-2/lesson-2.html" target="iframe_lessons">ng-controller - a better way</a></br>
+
+        <a href="group-3/lesson-1.html" target="iframe_lessons">more on ng-controller</a></br>
+
+      </div>
+
+      <div class="pull-right" style="width:68%;">
+        <iframe name="iframe_lessons" src="intro/lesson-1.html" style="width:100%;min-height:400px; margin-bottom:20px;"></iframe>
+
+
+        <div class="highlight">
+          <pre>
+            <code class="html">
+
+            </code>
+          </pre>
+        </div>
+
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="bs-callout bs-callout-warning" id="callout-stacked-modals">
+        <h4>References</h4>
+        <p><a href="https://www.youtube.com/watch?v=TRrL5j3MIvo">Introduction to Angular.js in 50 Examples (part 1)</a></p>
+        <p><a href="https://www.youtube.com/watch?v=6J08m1H2BME">Introduction to Angular.js in 50 Examples (part 2)</a></p>
+        <p><a href="https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples">Introduction to Angular.js in 50 Examples (github)</a></p>
+        <p><a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/contents">Shaping up with Angular.js (codeschool)</a></p>
+        <p><a href="https://egghead.io/technologies/angularjs">Angular JS Lessons (egghead)</a></p>
+      </div>
+
     </div>
 
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+        <p>Feel free to drop me a message <a href="http://twitter.com/kpvarma" target="_blank">@kpvarma</a>.</p>
+        <p>All credits to UI goes to <a href="http://getbootstrap.com/">Bootstrap</a> </p>
+        <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="bs-docs-footer-links muted">
+          <li>Currently v0.1.1</li>
+          <li>·</li>
+          <li><a href="https://github.com/kpvarma/learn-angular">GitHub</a></li>
+          <li>·</li>
+          <li><a href="https://github.com/kpvarma/learn-angular/issues?state=open">Issues</a></li>
+          <li>·</li>
+          <li><a href="https://github.com/kpvarma/learn-angular/releases">Releases</a></li>
+        </ul>
+      </div>
+    </footer>
+
     <!-- Load jQuery from CDN -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Load Angular JS from CDN -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>

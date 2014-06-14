@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="">
+  <head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+
+  </head>
+  <body>
+    <div style="margin:30px;">
+      Name: <input type="text" id="input_name"/>
+      Hello <span id="span_name">World!</span>
+      <script type="text/javascript">
+        var inputName = document.getElementById("input_name");
+        inputName.addEventListener('keyup', function(){
+          var nameValue = this.value;
+          console.log(nameValue);
+          var spanName = document.getElementById("span_name");
+          spanName.innerHTML = nameValue;
+        });
+      </script>
+    </div>
+
+  </body>
+</html>

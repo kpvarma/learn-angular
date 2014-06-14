@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="">
+  <head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+
+    <!-- Load angular.js first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+  </head>
+  <body>
+    <div style="margin:30px;">
+
+      <h1>Simple Binding</h1>
+
+      <div>
+        <h1>Car: {{ model }} {{ make }}</h1>
+        <h3>Manufacturer: {{ manufacturer }}</h3>
+        <h3>Price: {{ price }}</h3>
+        <p>Review: {{ review }}</p>
+      </div>
+      <div>
+        <input type="text" ng-model="model" placeholder="Model"></br>
+        <input type="text" ng-model="make" placeholder="Make"></br>
+        <input type="text" ng-model="manufacturer" placeholder="Manufacturer"></br>
+        <input type="text" ng-model="price" placeholder="On Road Price"></br>
+
+        <textarea rows="4" cols="50" ng-model="review" placeholder="Review"></textarea>
+      </div>
+    </div>
+
+  </body>
+</html>
